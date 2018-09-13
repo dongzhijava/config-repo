@@ -1,0 +1,7 @@
+zuul:
+  routes:
+    # /myProduct/product/list -> /product/product/list
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
